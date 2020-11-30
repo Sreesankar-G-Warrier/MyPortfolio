@@ -58,24 +58,24 @@
     background-color:whitesmoke;
     border-radius: 50%;
     margin-bottom: 3rem;
-    margin-left: 4rem;
     align-items: left;
     position: absolute;
     z-index: -1;
 }
-#float{
+.certificate{
     display: grid;
     grid-auto-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 280px;
-    height: 160px;
+    grid-gap: 2rem;
 }
 #image{
     width: 280px;
     height: 160px;
 }
-
+#images{
+    width:280px;
+    height: 160px;
+    margin-left: 8rem;
+}
 footer{
     padding:10px;
     justify-content: space-between;
@@ -88,9 +88,9 @@ footer{
     padding: 10px;
 }
 #logo{
-    margin:5px 0 30px 68px;
-    color: #333;
-    zoom: 160%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 3.5rem;
 }
 </style>
 <body>
@@ -101,8 +101,8 @@ footer{
                 <script src="./particles.min.js"></script>
                 <script src="./app.js"></script>
             </div>
-            <i class="fa fa-bolt fa-5x" aria-hidden="true" id="logo"></i>
-            <h1 style="font-size: 28px;color: whitesmoke;">Sreesankar G Warrier</h1>
+            <i class="fa fa-bolt fa-5x" aria-hidden="true" id="logo"></i><br>
+            <h1 style="font-size: 28px;color: whitesmoke; margin-top: 5rem;">Sreesankar G Warrier</h1>
             <p style="text-align: center;font-size: 14px;margin-bottom: 5rem;">Cyber Security | Blockchain | Fron-End Engineer</p>
             <h2 id="about-header">Who Am I</h2>
             <h2 id="do-header">What I Can Do</h2>
@@ -129,13 +129,13 @@ footer{
                 <p id="work"><b>In Front-End Development:-</b> HTML5, CSS3, JavaScript, ReactJs, MeterialUI.</p></a>
             </div>
                 <div id="tempHide2">
+                    <img src="./images/BCND.png" alt="BlockchainCertificate" id="images"><br><br>
                  <div class="certificate">
-                        <img src="./images/BCND.png" alt="BlockchainCertificate" id="image"><br>
                         <img src="./images/PEH.jpg" alt="Practical Ethical Hacking" id="image">
                         <img src="./images/FCCRWD.png" alt="FCC Responsive Web Design" id="image">
-                        <img src="./images/RT.JPG" alt="Certified IT Infra and Cybersecurity Analyst" id="image">
                     </div>
-                    <p>For more check my --> <a href="https://github.com/Sreesankar-G-Warrier" target="_blank"><b>GitHub </b></a> <-- Profile.</p>
+                   <br> <img src="./images/RT.JPG" alt="Certified IT Infra and Cybersecurity Analyst" id="images">
+                    <p>For more check my <a href="https://github.com/Sreesankar-G-Warrier" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
                 </div>
         </div>
 </div>       
