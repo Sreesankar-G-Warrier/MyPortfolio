@@ -12,8 +12,7 @@
 </head>
 <style>
     body{
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin: 50px 5rem 1rem 2rem;
         text-align: justify;
         background-color: #333;
     }
@@ -29,7 +28,19 @@
         transition:all 0.5s ease;
         margin: 2rem;
         font-size: 20px;
-        font-family:Courgette;
+        font-family:Merienda One;
+    }
+    h2{
+        border-style:solid;
+        border-width: .5px;
+        border-radius: 3px;
+        width: 200px;
+        color: whitesmoke;
+        padding: 5px;
+    }
+    h2:hover{
+        background-color: whitesmoke;
+        color: #333;
     }
     .container{
         display: grid;
@@ -50,7 +61,7 @@
     #vl {
     border-left: 2px solid whitesmoke;
     height: 700px;
-    margin-top: 0;
+    margin:2px 2px 0 0;
 }
 #particles-js{
     width: 150px;
@@ -61,6 +72,11 @@
     align-items: left;
     position: absolute;
     z-index: -1;
+}
+.particles{
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
 }
 .certificate{
     display: grid;
@@ -91,22 +107,27 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 2rem 0 0 3.5rem;
+    color: #333;
 }
 </style>
 <body>
 <div id="inline">
     <div class="container">
         <div id="heading">
-            <div id="particles-js">
-                <script src="./particles.min.js"></script>
-                <script src="./app.js"></script>
+            <div class="particles">
+                <div id="particles-js">
+                    <script src="./particles.min.js"></script>
+                    <script src="./app.js"></script>
+                </div>
+                <i class="fa fa-bolt fa-5x" aria-hidden="true" id="logo"></i><br>
             </div>
-            <i class="fa fa-bolt fa-5x" aria-hidden="true" id="logo"></i><br>
-            <h1 style="font-size: 28px;color: whitesmoke; margin-top: 5rem;">Sreesankar G Warrier</h1>
-            <p style="text-align: center;font-size: 14px;margin-bottom: 5rem;">Cyber Security | Blockchain | Fron-End Engineer</p>
-            <h2 id="about-header">Who Am I</h2>
-            <h2 id="do-header">What I Can Do</h2>
-            <h2 id="work-header">What I Did</h2>
+            <h1 style="font-size: 26px;color: whitesmoke; margin-top: 5rem;">Sreesankar G Warrier</h1>
+            <p style="font-size: 13px;margin-bottom: 5rem; margin-right:20px;">Cybersecurity | Blockchain | Front-End Engineer</p>
+            <div class="tabs">
+                <h2 id="about-header" data-toggle ="tabs" role="tab">Who Am I</h2>
+                <h2 id="do-header" data-toggle ="tabs" role="tab">What I Can Do</h2>
+                <h2 id="work-header" data-toggle ="tabs" role="tab">What I Did</h2>
+            </div>
             <footer>
                 <p style="text-align: center; margin-right:5em;">Contact Me</p>
                 <a href="https://github.com/Sreesankar-G-Warrier" id="icons" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
